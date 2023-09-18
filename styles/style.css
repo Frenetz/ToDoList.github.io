@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.main {
+  padding-bottom: 20px;
+}
+
+.main__container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
+
+.header__link {
+  font-size: 30px;
+}
+
+.main__buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__button {
+  background-color: white;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.main__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.table__task {
+  width: 15%;
+}
+
+.table__description {
+  width: 35%;
+}
+
+.table__start {
+  width: 15%;
+}
+
+.table__end {
+  width: 15%;
+}
+
+.table__complete {
+  width: 10%;
+}
+
+.table__delete {
+  width: 10%;
+}
+
+.delete-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.completed-task {
+  background-color: rgb(155, 255, 79);
+}
+
+.grey-task {
+  background-color: rgb(189, 189, 189);
+}
+
+.form {
+  width: 30%;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: none;
+  gap: 10px;
+  z-index: 1;
+}
+
+.form-visible {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__header {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.form__button {
+  background-color: white;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.background-dark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 0;
+}

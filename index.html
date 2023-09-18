@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="#">
+            <img class="logo-img" src="images/todolist.png" alt="logo" />
+          </a>
+          <a class="header__link" href="#">My TODO List</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__buttons">
+          <button class="main__button mark-even">Выделить четные</button>
+          <button class="main__button mark-odd">Выделить нечетные</button>
+          <button class="main__button delete-first">Удалить 1й элемент</button>
+          <button class="main__button delete-last">
+            Удалить последний элемент
+          </button>
+          <button class="main__button add-button">Добавить задачу</button>
+        </div>
+        <table class="table">
+          <tr>
+            <th class="table__task">Задача</th>
+            <th class="table__description">Описание</th>
+            <th class="table__start">Дата начала</th>
+            <th class="table__end">Дата окончания</th>
+            <th class="table__complete">Выполнено</th>
+            <th class="table__delete">Удалить</th>
+          </tr>
+          <tbody class="table__body"></tbody>
+        </table>
+        <form class="form">
+          <h2 class="form__header">Добавить задачу</h2>
+          <label for="task">Задача</label>
+          <input class="form__task" type="text" id="task" />
+          <label for="description">Описание</label>
+          <textarea
+            name=""
+            class="form__description"
+            id="description"
+            cols="10"
+            rows="10"
+            resize="none"
+          ></textarea>
+          <label for="date-start">Дата начала</label>
+          <input class="form__date-start" type="date" name="" id="date-start" />
+          <label for="date-finish">Дата окончания</label>
+          <input
+            class="form__date-finish"
+            type="date"
+            name=""
+            id="date-finish"
+          />
+          <button class="form__button">Добавить задачу</button>
+        </form>
+        <div class="background"></div>
+      </div>
+    </main>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
